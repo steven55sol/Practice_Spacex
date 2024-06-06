@@ -46,7 +46,7 @@ li{
 
 
 .container{ /*Esta clase ayudara a mantener una linea vertical y ademas centrara y se usa en varias secciones del codigo*/
-  max-width: 700px;
+  max-width: 1200px;
   height: 100%;
   margin: 0 auto;
 }
@@ -72,9 +72,14 @@ li{
 }
 
 .navegation-link a{
-  font-size: 15px;
+  font-size: 18px;
   font-family: var(--fuente-principal);
   font-weight: 700;
+  transition: color .2s ease-out;
+}
+
+.navegation-link a:hover{
+  color: var(--color-brown);
 }
 
 .navegation-link a:not(:last-child){
@@ -90,18 +95,19 @@ li{
 
 .navegation-icons i{
   cursor: pointer;
+  font-size: 20px;
 }
 
 .cart-shop::after{
   content: "0";
   position: absolute;
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 18px;
   background-color: var(--color-brown);
-  top: -9px;
-  right: -6px;
+  top: -12px;
+  right: -10px;
   border-radius: 50%;
-  font-size: 6px;
+  font-size: 11px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +138,7 @@ li{
 }
 
 .container-banner i{
-  font-size: 30px;
+  font-size: 50px;
   margin-left: 20px;
   margin-right: 20px;
   color: #858383;
@@ -165,9 +171,9 @@ li{
 
 .banner a{
   background-color: var(--color-brown);
-  padding: 10px 20px;
+  padding: 10px 30px;
   border-radius: 50px;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
   color: #fff;
   margin-top: 30px;
@@ -189,20 +195,20 @@ main{
 .gallery-item-1{
   position: relative;
   flex: 1;
-  height: 350px;
+  height: 480px;
   background-color: #fffefe;
   padding: 15px;
 }
 
 .item-title{
-   font-size: 25px;
+   font-size: 30px;
    font-weight: 900;
    font-family: var(--fuente-segundaria);
    margin-bottom: 10px;
 }
 
 .item-phrase{
-  font-size: 12px;
+  font-size: 15px;
   width: 40ch;
   margin-bottom: 30px;
   font-family: var(--fuente-principal);
@@ -212,7 +218,7 @@ main{
   padding: 10px 20px;
   background-color: var(--color-brown);
   border-radius: 50px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
   color: #fff;
   box-shadow: 0px 5px 10px 0px var(--color-brown);
@@ -229,16 +235,16 @@ main{
 
 .item-img{
   position: absolute;
-  width: 270px;
-  height: 150px;
-  right: 20%;
+  width: 280px;
+  height: 180px;
+  right: 29%;
   bottom: -15px;
 }
 
 .gallery-item{
   flex: 1;
   width: 100%;
-  height: 350px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -268,5 +274,76 @@ main{
 }
 
 .item-3{
+  position: relative;
   background-image: url('../image/card-4.jpg');
+}
+
+.item-3::before{
+  position: absolute;
+  content: "BONSAI BOX";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(79, 78, 78, 0.6);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: var(--fuente-segundaria);
+}
+
+/* Estilos del cards products */
+
+.products{
+  background-color: #f5f5f5;
+  padding: 0.5px;
+}
+
+.title-product__container{
+  text-align: center;
+  margin-top: 60px;
+  font-size: 30px;
+  font-family: var(--fuente-segundaria);
+  font-weight: 900;
+}
+
+.title-product__container span{
+  color: var(--color-brown);
+}
+
+.container-card{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+.card{
+  width: 280px;
+  height: 350px;
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0px 5px 10px #dfdede;
+}
+
+.card img{
+  width: 180px;
+  height: 200px;
+}
+
+.card p{
+  font-size: 18px;
+  font-family: var(--fuente-principal);
+}
+
+.card span{
+  color: var(--color-brown);
+  font-size: 18px;
+  font-weight: 800;
 }
