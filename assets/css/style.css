@@ -27,6 +27,7 @@ body {
   color: var(--cwolor-black-light);
   font-size: 16px;
   line-height: 1.6;
+  background-color: var(--color-white);
 }
 
 h1, h2, h3 {
@@ -49,6 +50,7 @@ li{
   max-width: 1200px;
   height: 100%;
   margin: 0 auto;
+  padding: 0px 20px;
 }
 
 /*===================================================================*/
@@ -102,10 +104,10 @@ li{
   content: "0";
   position: absolute;
   width: 20px;
-  height: 18px;
+  height: 20px;
   background-color: var(--color-brown);
-  top: -12px;
-  right: -10px;
+  top: -14px;
+  right: -7px;
   border-radius: 50%;
   font-size: 11px;
   display: flex;
@@ -248,7 +250,6 @@ main{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 5px;
 }
 
 .container-item{
@@ -295,7 +296,7 @@ main{
 /* Estilos del cards products */
 
 .products{
-  background-color: #f5f5f5;
+  background-color: #faf9f9;
   padding: 0.5px;
 }
 
@@ -321,7 +322,7 @@ main{
 
 .card{
   width: 280px;
-  height: 350px;
+  height: 300px;
   padding: 10px;
   background-color: #fff;
   display: flex;
@@ -333,8 +334,8 @@ main{
 }
 
 .card img{
-  width: 180px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 
 .card p{
